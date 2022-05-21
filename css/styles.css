@@ -37,7 +37,6 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-
 }
 
 nav ul li {
@@ -79,6 +78,7 @@ header .banner {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .library-info {
@@ -128,8 +128,6 @@ header .banner {
     gap: 20px;
     flex-grow: 1;
     width: 100%;
-
-
 }
 
 /* opening hours  */
@@ -332,7 +330,18 @@ footer .social-icons img {
 @media (max-width: 768px) {
 
     nav {
-        justify-content: center;
+        justify-content: start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+
     }
 
     .history {
