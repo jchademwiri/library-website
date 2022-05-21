@@ -374,6 +374,10 @@ footer .social-icons img {
         min-width: 200px;
     }
 
+    .event .event-info {
+        padding-left: 0;
+    }
+
 
 }
 
